@@ -35,7 +35,7 @@ export default function Home({ articles }) {
 }
 // N request -> se ejecuta 1 vez en el build time o para refrescar la pagina
 export async function getStaticProps() {
-  const response = await fetch('https://newsapi.org/v2/everything?q=tesla&from=2022-08-08&sortBy=publishedAt&apiKey=4dd1692f2a624fb3a6f50e64cc96f71f')
+  const response = await fetch('https://newsapi.org/v2/everything?q=tesla&from=2022-08-12&sortBy=publishedAt&apiKey=4dd1692f2a624fb3a6f50e64cc96f71f')
   const { articles } = await response.json()
   return {
     props: {
