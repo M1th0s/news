@@ -13,7 +13,7 @@ export default function Home({ articles }) {
         {articles.length === 1 && <p>No tenemos articulos!</p>}
         {articles.length > 0 && articles.map((article, index) => (
           <div key={index}>
-            <Image 
+            <img 
               alt={`Image for the article ${article.title}`} 
               src={article.urlToImage}
               width={450}
